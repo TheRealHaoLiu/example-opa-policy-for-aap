@@ -27,6 +27,10 @@ project_scm_branch_validation := result if {
 
 # Check if a given branch value is allowed
 allowed_branch(branch) if {
+	branch == ""
+}
+
+allowed_branch(branch) if {
 	some allowed_value in valid_project_scm_branch_values
 	branch == allowed_value
 }
