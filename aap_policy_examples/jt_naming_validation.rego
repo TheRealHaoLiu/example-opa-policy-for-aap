@@ -1,7 +1,6 @@
 package aap_policy_examples
 
 import rego.v1
-import future.keywords.in
 
 # Default policy response indicating allowed status with no violations
 default jt_naming_validation := {
