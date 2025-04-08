@@ -70,6 +70,7 @@ The repository includes test cases and example input data to help you validate y
 
 - [POLICY_INPUT_DATA.md](POLICY_INPUT_DATA.md): Contains detailed information about the input data structure used by the policies
 - [POLICY_OUTPUT_DATA.md](POLICY_OUTPUT_DATA.md): Contains detailed information about the output data structure
+- [Associating Policies with AAP Resources](docs/Associating%20policy%20with%20AAP%20resources.md): Guide on how to associate OPA policies with AAP resources
 - [Deploy OPA server on OpenShift](docs/Deploy%20OPA%20server%20on%20OpenShift.md): Instructions for setting up OPA server on OpenShift for development and testing
 - [Deploy OPA server with Podman](docs/Deploy%20OPA%20server%20with%20Podman.md): Instructions for setting up OPA server with Podman for development and testing
 

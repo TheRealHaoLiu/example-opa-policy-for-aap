@@ -1,5 +1,11 @@
 # Associating Policies with AAP Resources
 
+## Table of Contents
+- [Overview](#overview)
+- [Understanding OPA Packages and Rules](#understanding-opa-packages-and-rules)
+- [Associating Policies with AAP Resources](#associating-policies-with-aap-resources)
+- [Effects of Policy Association](#effects-of-policy-association)
+
 ## Overview
 
 Ansible Automation Platform (AAP) allows you to associate Open Policy Agent (OPA) policies with various resources to enforce security and compliance controls. This guide explains how to associate policies with AAP resources and their effects.
@@ -25,8 +31,7 @@ allowed := {
 ### Key Components
 
 1. **Package Declaration**: Defines the namespace for your policy
-2. **Imports**: Required dependencies (e.g., `rego.v1` for Rego v1 syntax)
-3. **Rules**: Define the policy logic and return a decision object
+2. **Rules**: Define the policy logic and return a decision object
 
 ## Associating Policies with AAP Resources
 
