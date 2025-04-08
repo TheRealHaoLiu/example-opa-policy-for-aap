@@ -33,25 +33,27 @@ allowed := {
 1. **Package Declaration**: Defines the namespace for your policy
 2. **Rules**: Define the policy logic and return a decision object
 
+Note that these components comprise the OPA policy name, which is formatted as `{package}/{rule}`. You will enter the OPA policy name when configuring enforcement points.
+
 ## Associating Policies with AAP Resources
 
 ### Available Enforcement Points
 
-You can associate policies with the following AAP resources:
+You can create an enforcement point by associating a policy with the following AAP resources:
 
-1. **Organization Level**
+1. **Organizations**
    - Affects all job templates within an Organization
    - Provides broad control over automation within organizational boundaries
 
-2. **Inventory Level**
+2. **Inventories**
    - Affects all jobs using a specified Inventory
    - Controls access to specific infrastructure resources
 
-3. **Job Template Level**
+3. **Job Templates**
    - Affects jobs launched from a specific Job Template
    - Provides granular control over specific automation tasks
 
-### How to Associate Policies
+### How to Associate a Policy with a Resource
 
 #### 1. Job Template Level
 
@@ -102,15 +104,14 @@ Policy evaluation is integrated into the job lifecycle as a dedicated phase call
 3. **Policy Evaluation**:
    - AAP sends the collected policies to the configured OPA server for evaluation
    - Each policy is evaluated against the job context
-   - If any policy evaluation:
+   - The job will be blocked if any policy evaluation:
      - Returns `"allowed": false`, or
      - Fails to evaluate
-     The job will be blocked
 
 4. **Job State Transition**:
    - If all policies allow the job:
-     - Job proceeds to playbook execution
+     - The job proceeds to playbook execution
    - If any policy blocks the job:
-     - Job transitions to "Error" state
+     - The job transitions to "Error" state
      - Playbook execution is prevented
      - Error messages from policy violations are recorded 
