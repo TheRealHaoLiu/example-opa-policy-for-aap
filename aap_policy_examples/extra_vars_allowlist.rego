@@ -6,13 +6,13 @@ import rego.v1
 allowed_extra_var_keys := ["allowed"]
 
 # Default policy result: allowed (no violations)
-default extra_vars_whitelist := {
+default extra_vars_allowlist := {
 	"allowed": true,
 	"violations": [],
 }
 
-# Evaluate extra_vars_whitelist, checking if provided extra_vars contain any keys not allowed
-extra_vars_whitelist := result if {
+# Evaluate extra_vars_allowlist, checking if provided extra_vars contain any keys not allowed
+extra_vars_allowlist := result if {
 	# Extract extra_vars from input, defaulting to empty object if missing
 	input_extra_var_keys := object.get(input, ["extra_vars"], {})
 

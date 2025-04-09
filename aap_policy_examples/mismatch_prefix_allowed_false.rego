@@ -1,6 +1,6 @@
 package aap_policy_examples
 
-prefix_delimiter := " "
+prefix_delimiter := "_"
 
 # job_template_prefix extracts the substring before the first prefix_delimiter in `input.job_template.name`.
 job_template_prefix := jtp if {

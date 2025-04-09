@@ -11,7 +11,7 @@ default extra_vars_validation := {
 	"violations": [],
 }
 
-# Evaluate extra_vars_whitelist to check if extra_vars values are allowed
+# Evaluate extra_vars_validation to check if extra_vars values are allowed
 extra_vars_validation := result if {
 	# Extract extra_vars from input, defaulting to empty object if missing
 	input_extra_vars := object.get(input, ["extra_vars"], {})
