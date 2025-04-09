@@ -51,6 +51,7 @@ The repository includes several example policies demonstrating different use cas
 7. Source code controls
    - [Only allow approved Github source repos](7a.Only%20allow%20approved%20Github%20repos.md) - Only allow approved source repos
    - [Only allow approved Github source repo branches](7b.Only%20allow%20certain%20Git%20branches.md) - Only allow approved source repo branches
+8. [Enforce Naming Standards](8.Enforce%20Job%20Template%20Naming%20Standards.md) - ensure Job Template name conforms to our standards
 
 Each policy example includes:
 - Detailed explanation of the use case
