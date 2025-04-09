@@ -49,7 +49,8 @@ The repository includes several example policies demonstrating different use cas
    - [Prevent job execution using extra vars with non approved values](6b.Prevent%20job%20execution%20using%20extra%20vars%20with%20non%20approved%20values.md) - Validate values for extra_vars 
    - [Prevent job execution based on user limitations for extra vars](6c.Prevent%20job%20execution%20based%20on%20user%20limitations%20for%20extra%20vars.md) - Team-based access control on extra_vars
 7. Source code controls
-   - [Only allow approved Github source repos](7a.Only%20allow%20approved%20Github%20repos.md)
+   - [Only allow approved Github source repos](7a.Only%20allow%20approved%20Github%20repos.md) - Only allow approved source repos
+   - [Only allow approved Github source repo branches](7b.Only%20allow%20certain%20Git%20branches.md) - Only allow approved source repo branches
 
 Each policy example includes:
 - Detailed explanation of the use case
