@@ -19,8 +19,7 @@ After applying the changes, wait for the operator to complete the update process
 For RPM-based installations, modify your inventory file used by the installer and add:
 
 ```yaml
-feature_flags:
-  FEATURE_POLICY_AS_CODE_ENABLED: True
+feature_flags: { "FEATURE_POLICY_AS_CODE_ENABLED"": True }
 ```
 
 After modifying the inventory file, you will need to rerun the installer to apply the changes.
@@ -30,8 +29,7 @@ After modifying the inventory file, you will need to rerun the installer to appl
 For containerized installations, modify your inventory file used by the installer and add:
 
 ```yaml
-feature_flags:
-  FEATURE_POLICY_AS_CODE_ENABLED: True
+feature_flags: { "FEATURE_POLICY_AS_CODE_ENABLED"": True }
 ```
 
 After modifying the inventory file, you will need to rerun the installer to apply the changes.
